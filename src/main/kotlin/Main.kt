@@ -1,5 +1,8 @@
 package org.truskovski
 
+import Runner.GaussFunction
+
 fun main() {
-    println("Hello World!")
+     val gaussFunction = GaussFunction();
+    gaussFunction.main()
 }

@@ -1,10 +1,10 @@
-package org.truskovski.Runner.AdditionalFunctions
+package Runner.AdditionalFunctions
 
 import java.util.*
 
 class Programm {
 
-    fun print(
+    fun customPrint(
         A: List<List<Double>>,
         B: List<Double>,
         selected: Pair<Int, Int>?
@@ -19,7 +19,7 @@ class Programm {
 
     }
 
-    fun swapRows(
+    public fun swapRows(
         A: MutableList<MutableList<Double>>,
         B: MutableList<Double>,
         row1: Int,
