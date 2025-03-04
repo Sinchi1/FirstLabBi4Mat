@@ -10,16 +10,18 @@ class Programm {
         selected: Pair<Int, Int>?
     ){
         for (row in B.indices){
-            print("(")
+            print("\n")
             for (col in A[row].indices){
                 val marker = if (selected != null && selected.first == row && selected.second == col)  "*" else ""
-                print("\t${"%.2f".format(Locale.US, A[row][col])}$marker")
+                print("\t${"%.3f".format(Locale.US, A[row][col])}$marker")
             }
+            print("\t|\t${"%.3f".format(Locale.US, B[row])}")
         }
+        print("\n")
 
     }
 
-    public fun swapRows(
+    fun swapRows(
         A: MutableList<MutableList<Double>>,
         B: MutableList<Double>,
         row1: Int,
